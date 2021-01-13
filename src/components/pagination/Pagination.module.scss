@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  button {
+    min-width: 32px;
+    padding: 5px 10px;
+    font-style: normal;
+    line-height: 20px;
+    color: #24292e;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transition: border-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    background-color: transparent;
+
+    &:hover {
+      border-color: #e1e4e8;
+      transition-duration: 0.1s;
+    }
+  }
+
+  .active_page {
+    color: #ffffff;
+    background-color: #0366d6;
+    border-color: transparent;
+  }
+}

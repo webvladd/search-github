@@ -1,0 +1,115 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px;
+
+  .overall_result {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 16px;
+  }
+
+  .result_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    &_item {
+      border-top: 1px solid #e1e4e8;
+      display: flex;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      .item_icon {
+        margin-right: 8px;
+        padding-top: 4px;
+      }
+
+      .item {
+        display: flex;
+        flex-direction: column;
+
+        &_link_repo {
+          display: flex;
+          align-items: center;
+
+          a {
+            color: #0366d6;
+            font-size: 16px;
+            font-weight: 400;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          span {
+            padding: 0 7px;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            border-radius: 2em;
+            border: 1px solid #e1e4e8;
+            color: #586069;
+            margin-left: 8px;
+          }
+        }
+
+        &_description {
+          margin-bottom: 4px;
+          font-size: 14px;
+          color: #24292e;
+        }
+
+        &_status_repo {
+          display: flex;
+          align-items: center;
+        }
+
+        &_star_repo {
+          display: flex;
+          align-items: center;
+          margin-right: 16px;
+
+          svg {
+            margin-right: 5px;
+          }
+
+          span {
+            color: #586069;
+            font-size: 12px;
+          }
+        }
+
+        &_language_repo {
+          margin-right: 16px;
+
+          span {
+            color: #586069;
+            font-size: 12px;
+          }
+        }
+
+        &_license_repo {
+          margin-right: 16px;
+
+          span {
+            color: #586069;
+            font-size: 12px;
+          }
+        }
+
+        &_last_updated {
+          margin-right: 16px;
+
+          span {
+            color: #586069;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
